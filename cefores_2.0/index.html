@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Proxmox VE - Apresentação</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+ <body>
+  <div class="apresentacao">
+   <div class="topo">
+   </div>
+   <div class="barra" id="barra">
+   </div>
+   <section class="slide ativo" data-fala="Olá! 👋 Vamos entender o Proxmox VE de forma simples e sem complicação!">
+    <a href="https://www.uftm.edu.br/cefores">
+     <img alt="CEFORES" class="logo-cefores" src="imagens/logo-cefores.png"/>
+    </a>
+    <div class="capa">
+     <p class="etiqueta">ATIVIDADE 2</p>
+     <h1>Proxmox
+      <span>
+       VE
+      </span>
+     </h1>
+     <p class="subtitulo">Uma forma simples de entender a virtualização.</p>
+     <div class="info">
+      <p>
+       <strong>
+        Curso:
+       </strong>
+       Sistemas Operacionais 2 / UFTM
+      </p>
+      <p>
+       <strong>
+        Integrantes:
+       </strong>
+       Vinícius de Oliveira Borges
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="slide" data-fala="Pense em um servidor grande sendo dividido para criar vários computadores virtuais!">
+    <div class="titulo">
+     <h2>
+      O que é virtualização?
+     </h2>
+    </div>
+    <p class="texto">
+     Virtualização permite criar
+     <b>
+      computadores virtuais
+     </b>
+     dentro de um computador físico.
+    </p>
+    <div class="caixa-extra">
+     Um único computador pode executar Windows e Linux ao mesmo tempo, como máquinas separadas.
+    </div>
+   </section>
+   <section class="slide" data-fala="Eu sou como um gerente: ajudo a organizar os recursos para cada máquina virtual!">
+    <div class="titulo">
+     <h2>O que é um Hypervisor?</h2>
+    </div>
+    <p class="texto">É o programa responsável por
+     <b>
+      criar e controlar as máquinas virtuais
+     </b>
+     .
+    </p>
+    <div class="caixa-extra">
+     Ele organiza e distribui memória, processamento e outros recursos.
+    </div>
+    <div class="interface-proxmox">
+     <div class="interface-topo">
+      Proxmox Virtual Environment
+     </div>
+     <div class="interface-corpo">
+      <aside>
+       <strong>
+        Datacenter
+       </strong>
+       <div>
+        ▾ servidor
+       </div>
+       <div class="ativo-menu">
+        ▣ Summary
+       </div>
+       <div>
+        ▣ VM 100
+       </div>
+       <div>
+        ▣ VM 101
+       </div>
+       <div>
+        ▣ Container 200
+       </div>
+      </aside>
+      <main>
+       <h3>
+        Summary
+       </h3>
+       <div class="status">
+        <div>
+         <span>
+          CPU
+         </span>
+         <b>
+          24%
+         </b>
+        </div>
+        <div>
+         <span>
+          Memória
+         </span>
+         <b>
+          42%
+         </b>
+        </div>
+        <div>
+         <span>
+          Armazenamento
+         </span>
+         <b>
+          61%
+         </b>
+        </div>
+       </div>
+       <div class="grafico-falso">
+        <span style="height:35%">
+        </span>
+        <span style="height:58%">
+        </span>
+        <span style="height:42%">
+        </span>
+        <span style="height:75%">
+        </span>
+        <span style="height:48%">
+        </span>
+        <span style="height:64%">
+        </span>
+        <span style="height:38%">
+        </span>
+        <span style="height:70%">
+        </span>
+       </div>
+      </main>
+     </div>
+     <p class="legenda">Exemplo visual da interface web do Proxmox VE.</p>
+    </div>
+   </section>
+   <section class="slide" data-fala="É aqui que eu entro! O Proxmox ajuda a gerenciar tudo em um só lugar.">
+    <div class="titulo">
+     <h2>
+      Onde entra o Proxmox?
+     </h2>
+    </div>
+    <p class="texto">
+     O
+     <b>
+      Proxmox VE
+     </b>
+     permite criar e administrar máquinas virtuais e containers.
+    </p>
+    <div class="caixa-extra">
+     Servidor físico → Proxmox → Máquinas virtuais
+    </div>
+    <div class="mini-diagrama">
+     <div>
+      🖥️
+      <br/>
+      <strong>
+       Servidor
+      </strong>
+     </div>
+     <span>
+      →
+     </span>
+     <div>
+      🟢
+      <br/>
+      <strong>
+       Proxmox VE
+      </strong>
+     </div>
+     <span>
+      →
+     </span>
+     <div>
+      💻 💻 💻
+      <br/>
+      <strong>
+       Máquinas Virtuais
+      </strong>
+     </div>
+    </div>
+   </section>
+   <section class="slide" data-fala="Máquinas, containers e backups? Eu ajudo você a organizar tudo!">
+    <div class="titulo">
+     <h2>
+      O que podemos fazer com ele?
+     </h2>
+    </div>
+    <p class="texto">
+     Com o Proxmox podemos criar máquinas virtuais, containers, backups e administrar pelo navegador.
+    </p>
+    <div class="caixa-extra">
+     Tudo de forma centralizada.
+    </div>
+   </section>
+   <section class="slide" data-fala="Passo a passo! Primeiro o servidor, depois criamos e configuramos as máquinas.">
+    <div class="titulo">
+     <h2>
+      Como funciona na prática?
+     </h2>
+    </div>
+    <div class="passos-numerados">
+     <div class="passo-item">
+      <span class="numero-passo">
+       1
+      </span>
+      <div>
+       <strong>
+        Instalar o Proxmox
+       </strong>
+       <p>
+        O Proxmox é instalado no servidor físico.
+       </p>
+      </div>
+     </div>
+     <div class="passo-item">
+      <span class="numero-passo">
+       2
+      </span>
+      <div>
+       <strong>
+        Criar uma máquina virtual
+       </strong>
+       <p>
+        Escolhemos o tipo de ambiente que será criado.
+       </p>
+      </div>
+     </div>
+     <div class="passo-item">
+      <span class="numero-passo">
+       3
+      </span>
+      <div>
+       <strong>
+        Definir os recursos
+       </strong>
+       <p>
+        Configuramos memória, processador e armazenamento.
+       </p>
+      </div>
+     </div>
+     <div class="passo-item">
+      <span class="numero-passo">
+       4
+      </span>
+      <div>
+       <strong>
+        Instalar o sistema operacional
+       </strong>
+       <p>
+        Por exemplo, Linux ou Windows na máquina virtual.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="caixa-extra">
+     Depois, administramos tudo pela interface web.
+    </div>
+   </section>
+   <section class="slide" data-fala="Legal, né? Mais organização e melhor aproveitamento do servidor!">
+    <div class="titulo">
+     <h2>
+      Principais vantagens
+     </h2>
+    </div>
+    <div class="vantagens-lista">
+     <div class="vantagem-item">
+      <span>
+       ●
+      </span>
+      <p>
+       <strong>
+        Várias máquinas:
+       </strong>
+       permite executar diversos ambientes em um único servidor.
+      </p>
+     </div>
+     <div class="vantagem-item">
+      <span>
+       ●
+      </span>
+      <p>
+       <strong>
+        Melhor aproveitamento:
+       </strong>
+       utiliza melhor os recursos do hardware.
+      </p>
+     </div>
+     <div class="vantagem-item">
+      <span>
+       ●
+      </span>
+      <p>
+       <strong>
+        Interface web:
+       </strong>
+       facilita a administração pelo navegador.
+      </p>
+     </div>
+     <div class="vantagem-item">
+      <span>
+       ●
+      </span>
+      <p>
+       <strong>
+        Backups e snapshots:
+       </strong>
+       ajuda na proteção e recuperação dos ambientes.
+      </p>
+     </div>
+     <div class="vantagem-item">
+      <span>
+       ●
+      </span>
+      <p>
+       <strong>
+        Código aberto:
+       </strong>
+       oferece flexibilidade e acesso ao projeto.
+      </p>
+     </div>
+    </div>
+    <div class="caixa-extra">
+     Menos equipamentos físicos e mais facilidade para administrar.
+    </div>
+   </section>
+   <section class="slide" data-fala="Um único servidor pode cuidar de vários ambientes virtuais diferentes!">
+    <div class="titulo">
+     <h2>
+      Exemplo simples
+     </h2>
+    </div>
+    <p class="texto">
+     Imagine uma empresa com apenas um servidor físico.
+    </p>
+    <div class="caixa-extra">
+     Servidor → Proxmox → VM 1, VM 2, VM 3 e VM 4
+    </div>
+    <div class="imagem-exemplo-final">
+     <img alt="Exemplo visual de servidor físico, Proxmox VE e máquinas virtuais" src="imagens/exemplo-vms.svg"/>
+    </div>
+   </section>
+   <section class="slide" data-fala="Não é mágica! É tecnologia, planejamento e conhecimento trabalhando juntos.">
+    <div class="titulo">
+     <h2>
+      Vantagens e desafios
+     </h2>
+    </div>
+    <p class="texto">
+     <b>
+      Vantagens:
+     </b>
+     melhor aproveitamento, facilidade e gerenciamento centralizado.
+     <br/>
+     <br/>
+     <b>
+      Desafios:
+     </b>
+     exige conhecimento técnico e planejamento.
+    </p>
+    <div class="caixa-extra">
+     Todo sistema tem pontos positivos e desafios. O importante é saber configurar bem!
+    </div>
+   </section>
+   <section class="slide" data-fala="E pronto! Agora você já tem uma visão geral de como o Proxmox VE funciona! 🚀">
+    <div class="titulo">
+     <h2>
+      Conclusão
+     </h2>
+    </div>
+    <p class="texto">
+     O Proxmox VE facilita a criação e o gerenciamento de máquinas virtuais e containers.
+    </p>
+    <div class="caixa-extra">
+     Em uma frase: ele transforma um servidor físico em uma plataforma capaz de executar vários ambientes virtuais.
+    </div>
+    <h3 class="fontes-titulo">
+     Fontes para pesquisa
+    </h3>
+    <ul class="fontes-lista">
+     <a href="https://proxmox.com/en/downloads/proxmox-virtual-environment/documentation">
+      <li>
+       https://proxmox.com/en/downloads/proxmox-virtual-environment/documentation
+      </li>
+     </a>
+     <a href="https://proxmox.com/en/">
+      <li>
+       https://proxmox.com/en/
+      </li>
+     </a>
+     <a href="https://www.uftm.edu.br/comunicacao/identidade-visual?">
+      <li>
+       https://www.uftm.edu.br/comunicacao/identidade-visual?
+      </li>
+     </a>
+    </ul>
+    <p class="fontes">
+     CEFORES — Centro de Educação Profissional • UFTM • Imagem: Wikimedia Commons, Proxmox.
+    </p>
+   </section>
+  </div>
+  <div class="mascote-box escondido" id="mascoteBox">
+   <div class="balao" id="fala">
+   </div>
+   <img alt="Mascote explicando o conteúdo" class="mascote" src="imagens/mascote.png"/>
+  </div>
+  <div class="controles">
+   <button id="anterior">
+    ← Anterior
+   </button>
+   <span id="contador">
+   </span>
+   <button id="proximo">
+    Próximo →
+   </button>
+  </div>
+   <script src="script.js"></script>
+  </body>
+</html>

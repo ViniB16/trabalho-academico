@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 450" role="img" aria-label="Servidor físico, Proxmox VE e quatro máquinas virtuais">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".10"/>
+  </filter>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8ed23b"/>
+    <stop offset="1" stop-color="#4fa52a"/>
+  </linearGradient>
+</defs>
+
+<rect x="8" y="8" width="1104" height="434" rx="22" fill="#fff"/>
+
+<g font-family="Arial,Helvetica,sans-serif" fill="#14502f" font-weight="700">
+  <text x="55" y="48" font-size="23">1. Servidor físico</text>
+  <text x="315" y="48" font-size="23">2. Proxmox VE</text>
+  <text x="575" y="48" font-size="23">3. Máquinas virtuais</text>
+</g>
+
+<!-- Servidor -->
+<g filter="url(#shadow)">
+  <rect x="55" y="82" width="125" height="210" rx="16" fill="#252b2e"/>
+  <rect x="69" y="99" width="97" height="30" rx="5" fill="#394247"/>
+  <rect x="69" y="137" width="97" height="30" rx="5" fill="#394247"/>
+  <rect x="69" y="175" width="97" height="30" rx="5" fill="#394247"/>
+  <rect x="69" y="213" width="97" height="30" rx="5" fill="#394247"/>
+  <circle cx="81" cy="114" r="4" fill="#78be20"/>
+  <circle cx="81" cy="152" r="4" fill="#78be20"/>
+  <circle cx="81" cy="190" r="4" fill="#78be20"/>
+  <circle cx="81" cy="228" r="4" fill="#78be20"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle" fill="#29332d">
+  <text x="117" y="324" font-size="17">Um único servidor</text>
+  <text x="117" y="347" font-size="17">na empresa</text>
+</g>
+
+<path d="M205 185 H262" stroke="#78be20" stroke-width="10" stroke-linecap="round"/>
+<path d="M262 185 l-19 -16 v32 z" fill="#78be20"/>
+
+<!-- Proxmox -->
+<g filter="url(#shadow)">
+  <rect x="290" y="82" width="210" height="210" rx="18" fill="#fff" stroke="#87b85d" stroke-width="3"/>
+  <path d="M335 150 L395 108 L455 150 L421 206 L395 188 L369 206 Z" fill="#ef8715"/>
+  <path d="M335 150 L395 188 L455 150 L421 206 L395 234 L369 206 Z" fill="#1f2426"/>
+</g>
+<text x="395" y="270" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#222">PROXMOX VE</text>
+<text x="395" y="320" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#39433d">Gerencia e divide</text>
+<text x="395" y="342" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#39433d">os recursos do servidor</text>
+
+<path d="M525 185 H565" stroke="#78be20" stroke-width="10" stroke-linecap="round"/>
+<path d="M565 185 l-19 -16 v32 z" fill="#78be20"/>
+
+<!-- distribuição -->
+<path d="M590 98 V72 H1072 V98" fill="none" stroke="#26733a" stroke-width="3" stroke-dasharray="9 7"/>
+<path d="M616 98 V81 M746 98 V81 M876 98 V81 M1034 98 V81" stroke="#26733a" stroke-width="3"/>
+
+<!-- VM 1 -->
+<g filter="url(#shadow)" font-family="Arial,Helvetica,sans-serif">
+  <rect x="575" y="108" width="112" height="195" rx="14" fill="#f1f8eb" stroke="#a6c77e" stroke-width="2"/>
+  <text x="631" y="135" text-anchor="middle" font-size="18" font-weight="700" fill="#14502f">VM 1</text>
+  <rect x="595" y="151" width="72" height="50" rx="6" fill="#fff" stroke="#303638" stroke-width="2"/>
+  <rect x="604" y="162" width="20" height="27" rx="2" fill="#2fa9ff"/>
+  <text x="645" y="179" text-anchor="middle" font-size="10">Windows</text>
+  <text x="631" y="234" text-anchor="middle" font-size="15">Servidor</text>
+  <text x="631" y="255" text-anchor="middle" font-size="15">Windows</text>
+</g>
+
+<!-- VM 2 -->
+<g filter="url(#shadow)" font-family="Arial,Helvetica,sans-serif">
+  <rect x="705" y="108" width="112" height="195" rx="14" fill="#eef7fb" stroke="#8dbbd1" stroke-width="2"/>
+  <text x="761" y="135" text-anchor="middle" font-size="18" font-weight="700" fill="#14502f">VM 2</text>
+  <rect x="725" y="151" width="72" height="50" rx="6" fill="#fff" stroke="#303638" stroke-width="2"/>
+  <circle cx="751" cy="176" r="13" fill="#202020"/>
+  <text x="779" y="179" text-anchor="middle" font-size="10">Linux</text>
+  <text x="761" y="234" text-anchor="middle" font-size="15">Servidor</text>
+  <text x="761" y="255" text-anchor="middle" font-size="15">Linux</text>
+</g>
+
+<!-- VM 3 -->
+<g filter="url(#shadow)" font-family="Arial,Helvetica,sans-serif">
+  <rect x="835" y="108" width="112" height="195" rx="14" fill="#fff8e7" stroke="#d9bf76" stroke-width="2"/>
+  <text x="891" y="135" text-anchor="middle" font-size="18" font-weight="700" fill="#14502f">VM 3</text>
+  <rect x="855" y="151" width="72" height="50" rx="6" fill="#fff" stroke="#303638" stroke-width="2"/>
+  <circle cx="891" cy="176" r="15" fill="none" stroke="#2580bb" stroke-width="4"/>
+  <path d="M876 176 H906 M891 161 V191" stroke="#2580bb" stroke-width="2"/>
+  <text x="891" y="234" text-anchor="middle" font-size="15">Aplicação /</text>
+  <text x="891" y="255" text-anchor="middle" font-size="15">Serviço</text>
+</g>
+
+<!-- VM 4 maior -->
+<g filter="url(#shadow)" font-family="Arial,Helvetica,sans-serif">
+  <rect x="965" y="108" width="132" height="195" rx="14" fill="#f5effb" stroke="#c6abd8" stroke-width="2"/>
+  <text x="1031" y="135" text-anchor="middle" font-size="18" font-weight="700" fill="#14502f">VM 4</text>
+  <rect x="990" y="151" width="82" height="50" rx="6" fill="#fff" stroke="#303638" stroke-width="2"/>
+  <path d="M1001 176 l18 -14 18 14 -18 14 z" fill="#78be20"/>
+  <text x="1031" y="234" text-anchor="middle" font-size="14">Ambiente de</text>
+  <text x="1031" y="255" text-anchor="middle" font-size="14">testes</text>
+</g>
+
+<rect x="575" y="332" width="522" height="68" rx="14" fill="#eef7e8"/>
+<circle cx="606" cy="366" r="16" fill="url(#green)"/>
+<path d="M598 366 l6 6 11 -13" fill="none" stroke="#fff" stroke-width="3"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#25302a" font-size="15">
+  <text x="632" y="360">O Proxmox usa os recursos do servidor</text>
+  <text x="632" y="381" font-weight="700">para executar várias VMs independentes.</text>
+</g>
+</svg>
